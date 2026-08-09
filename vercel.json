@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://api-chaining-server.vercel.app/api/:path*"
+    },
+    {
+      "source": "/docs",
+      "destination": "https://api-chaining-server.vercel.app/docs"
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "https://api-chaining-server.vercel.app/docs/:path*"
+    },
+    {
+      "source": "/health",
+      "destination": "https://api-chaining-server.vercel.app/health"
+    },
+    {
+      "source": "/countries/:path*",
+      "destination": "https://api-chaining-server.vercel.app/countries/:path*"
+    },
+    {
+      "source": "/v6/:path*",
+      "destination": "https://api-chaining-server.vercel.app/v6/:path*"
+    },
+    {
+      "source": "/agify",
+      "destination": "https://api-chaining-server.vercel.app/agify"
+    },
+    {
+      "source": "/genderize",
+      "destination": "https://api-chaining-server.vercel.app/genderize"
+    },
+    {
+      "source": "/nationalize",
+      "destination": "https://api-chaining-server.vercel.app/nationalize"
+    },
+    {
+      "source": "/((?!assets/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
